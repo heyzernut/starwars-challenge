@@ -1,9 +1,30 @@
-body.starwar {
-  background-image: url("../images/dealth_star.jpg");
+
+.starwar {
+  background-image: url("/assets/images/theforceawaken_bg.jpg");
   background-size: cover;
   color: #ffffff;
 }
 
 .logo {
-  margin-top: 50px;
+  margin-top: 20px;
+  width: 226px;
 }
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575px) {
+    .logo {
+      width: 520px;
+    }
+  }
+
+  /*// Small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767px) {
+
+  }
+
+  /*// Medium devices (tablets, less than 992px)*/
+  @media (max-width: 991px) {}
+
+  /*// Large devices (desktops, less than 1200px)*/
+  @media (max-width: 1199px) {}

@@ -3,19 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Star Wars: The Force Awakens</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
 
   <body class="starwar">
-    <div class="container" id="theForceChar">
-      <img src="./assets/images/starwars_logo.png" width="250" height="120" class="logo rounded mx-auto d-block" alt="">
 
-      <div v-for="img in images">
+    <div class="container" id="theForceChar">
+
+      <div>
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./assets/images/sw_logo.png" alt="">
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4 l2"><p>s12 m4</p></div>
+        <div class="col s12 m4 l8"><p>s12 m4</p></div>
+        <div class="col s12 m4 l2"><p>s12 m4</p></div>
+      </div>
+
+      <!-- <div v-for="img in images">
         <div v-if="randomChar === img.attr">
           <img v-bind:src='img.image'/>
         </div>
-      </div>
+      </div> -->
       <div>
         {{results}}
       </div>
