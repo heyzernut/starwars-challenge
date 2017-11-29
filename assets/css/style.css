@@ -42,6 +42,12 @@
     text-shadow: 2px 2px black;
   }
 
+  .footer-copyright {
+    padding: 10px 0px;
+    background-color: #191919;
+    margin-top: -6px;
+  }
+
 
 @media only screen and (max-width: 600px) {
 
@@ -58,7 +64,7 @@
   .brand-logo {
     margin-top: 20px auto;
     width: 50%;
-    margin-left: 24%;
+    margin-left: 25%;
   }
 
   img.forceChar{
@@ -67,7 +73,12 @@
   }
 
   .info {
+    width: 103%;
     margin-top: -6px;
+  }
+
+  .row.col {
+    padding:0px;
   }
 
 }
