@@ -1,30 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 
-.starwar {
-  background-image: url("/assets/images/theforceawaken_bg.jpg");
-  background-size: cover;
+  li {
+    padding: 5px 0px;
+  }
+
+  td {
+    padding: 5px 5px;
+  }
+
+  .starwar {
+    background-image: url("../assets/images/theforceawaken_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sw.row {
+    margin-bottom: 0px;
+  }
+
+  .brand-logo {
+    margin-top: 20px;
+    width: 22%;
+  }
+
+  img.forceChar{
+    width: 690px;
+    height: 580px;
+  }
+
+  .info {
+    border: 2px solid rgba(81, 229, 133, 0.3);
+    padding: 20px;
+    background-color: rgba(45, 240, 54, 0.3);
+    box-shadow: 0 0 10px #9ecaed;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-shadow: 2px 2px black;
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .starwar {
+  background-image: url("../assets/images/sw.jpg");
   color: #ffffff;
-}
-
-.logo {
-  margin-top: 20px;
-  width: 226px;
-}
-
-
-/*// Extra small devices (portrait phones, less than 576px)*/
-  @media (max-width: 575px) {
-    .logo {
-      width: 520px;
-    }
+  background-repeat: repeat;
   }
 
-  /*// Small devices (landscape phones, less than 768px)*/
-  @media (max-width: 767px) {
-
+  .brand-logo {
+    margin-top: 20px auto;
+    width: 50%;
+    margin-left: 24%;
   }
 
-  /*// Medium devices (tablets, less than 992px)*/
-  @media (max-width: 991px) {}
+  img.forceChar{
+    width: 100%;
+    height: 300px;
+  }
 
-  /*// Large devices (desktops, less than 1200px)*/
-  @media (max-width: 1199px) {}
+  .info {
+    margin-top: -6px;
+  }
+
+}

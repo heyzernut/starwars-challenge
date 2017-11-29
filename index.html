@@ -2,37 +2,77 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Star Wars: The Force Awakens</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
 
   <body class="starwar">
-
     <div class="container" id="theForceChar">
 
       <div>
-        <a class="navbar-brand" href="#">
-          <img class="logo" src="./assets/images/sw_logo.png" alt="">
+        <a href="#">
+          <img class="brand-logo" src="./assets/images/sw_logo.png" alt="">
         </a>
       </div>
 
-      <div class="row">
-        <div class="col s12 m4 l2"><p>s12 m4</p></div>
-        <div class="col s12 m4 l8"><p>s12 m4</p></div>
-        <div class="col s12 m4 l2"><p>s12 m4</p></div>
-      </div>
-
-      <!-- <div v-for="img in images">
-        <div v-if="randomChar === img.attr">
-          <img v-bind:src='img.image'/>
+      <div class="sw row">
+        <div class="col s12 m12 xl1"></div>
+        <div class="col s12 m12 xl7">
+          <div v-for="img in images">
+            <div v-if="randomChar === img.attr">
+              <img class="forceChar" v-bind:src='img.image'/>
+            </div>
+          </div>
         </div>
-      </div> -->
-      <div>
-        {{results}}
+
+        <div class="col s12 m12 xl4">
+          <div class="info">
+            <h4> Profile </h4>
+            <table class="responsive-table">
+              <tbody>
+                <tr>
+                  <td>Name:</td>
+                  <td>{{results.name}}</td>
+                </tr>
+                <tr>
+                  <td>Gender:</td>
+                  <td>{{results.gender}}</td>
+                </tr>
+                <tr>
+                  <td>Birth Year:</td>
+                  <td>{{results.birth_year}}</td>
+                </tr>
+                <tr>
+                  <td>Height:</td>
+                  <td>{{results.height}}</td>
+                </tr>
+                <tr>
+                  <td>Mass:</td>
+                  <td>{{results.mass}}</td>
+                </tr>
+                <tr>
+                  <td>Hair Color</td>
+                  <td>{{results.hair_color}}</td>
+                </tr>
+                <tr>
+                  <td>Skin Color:</td>
+                  <td>{{results.skin_color}}</td>
+                </tr>
+                <tr>
+                  <td>Eye Color:</td>
+                  <td>{{results.eye_color}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
     </div>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/js/script.js"></script>

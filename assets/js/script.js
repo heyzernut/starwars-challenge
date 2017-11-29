@@ -1,4 +1,3 @@
-
 axios.get(`https://swapi.co/api/films/7/`)
   .then(response => {
       characters = response.data.characters
@@ -12,48 +11,37 @@ axios.get(`https://swapi.co/api/films/7/`)
       randomChar: randomChar,
       images: [
         { attr: 'https://swapi.co/api/people/1/',
-          image: '/assets/images/swchar/beru_whitesun_lars.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/3/',
-          image: '/assets/images/swchar/biggs_darklighter.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/R2-D2.png'
         },
         { attr: 'https://swapi.co/api/people/5/',
-          image: '/assets/images/swchar/C-3PO.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/Leia-Organa.png'
         },
         { attr: 'https://swapi.co/api/people/13/',
-          image: '/assets/images/swchar/darth_vader.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/14/',
-          image: '/assets/images/swchar/leia_organa.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/27/',
-          image: '/assets/images/swchar/lukes_kywalker.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/84/',
-          image: '/assets/images/swchar/obi-wan_kenobi.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/85/',
-          image: '/assets/images/swchar/owen_lars.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/86/',
-          image: '/assets/images/swchar/R2-D2.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/87/',
-          image: '/assets/images/swchar/R5-D4.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/manss.png'
         },
         { attr: 'https://swapi.co/api/people/88/',
-          image: '/assets/images/swchar/obi-wan_kenobi.png',
-          background: '/assets/images/swbackgrounds/cliffs.jpg'
+          image: '../assets/images/swchar/owen_lars.png'
         }
       ]
     },
@@ -73,6 +61,6 @@ axios.get(`https://swapi.co/api/films/7/`)
           this.results = 'An error occurred,' + error
         })
       }
-    }
-  })
-});
+    },
+    })
+  });
