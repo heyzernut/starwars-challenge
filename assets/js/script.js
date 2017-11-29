@@ -17,7 +17,7 @@ axios.get(`https://swapi.co/api/films/7/`)
           image: './assets/images/swchar/R2-D2.png'
         },
         { attr: 'https://swapi.co/api/people/5/',
-          image: './assets/images/swchar/leia-organa.png'
+          image: './assets/images/swchar/leia.png'
         },
         { attr: 'https://swapi.co/api/people/13/',
           image: './assets/images/swchar/chewbacca.png'
