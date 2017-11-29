@@ -9,7 +9,7 @@
   }
 
   .starwar {
-    background-image: url("/assets/images/theforceawaken_bg.jpg");
+    background-image: url("../images/theforceawaken_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -50,7 +50,7 @@
   }
 
   .starwar {
-  background-image: url("/assets/images/sw.jpg");
+  background-image: url("../images/sw.jpg");
   color: #ffffff;
   background-repeat: repeat;
   }
